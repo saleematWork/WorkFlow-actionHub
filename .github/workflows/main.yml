@@ -15,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.00'
+        ruby-version: '3.0.0'
 
     - name: Run ceedlings tests
       run: ceedling test::Hello
