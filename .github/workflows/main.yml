@@ -1,0 +1,14 @@
+name: Hello world
+
+on:
+  push:
+    branches: [main]
+
+
+jobs:
+  demo:
+    runs-on: unbuntu-latest
+
+    steps:
+      name: Hello world
+      run: echo "Hello world"
