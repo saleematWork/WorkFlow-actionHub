@@ -12,10 +12,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: Set up ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.0.0'
+
+    - name: install ceedling
+      run:  gem install ceedling
+      
 
     - name: Run ceedlings tests
       run: ceedling test::Hello
