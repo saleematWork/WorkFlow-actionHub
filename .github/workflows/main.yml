@@ -22,6 +22,6 @@ jobs:
       
 
     - name: Run ceedlings tests
-      run: ceedling test:Hello
+      run: ceedling test:hello
 
       
